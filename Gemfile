@@ -8,6 +8,9 @@ gem 'rails', '4.2.5.1'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
+gem 'stock_quote'
+
+
 gem 'sqlite3', group: [:development, :test]
 
 group :production do
