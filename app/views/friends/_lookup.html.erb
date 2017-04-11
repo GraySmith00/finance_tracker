@@ -10,6 +10,8 @@
                           class: 'form-control search-box input-lg' %>
     </div>
     
+    <br/>
+    
     <div class="col-md-2">
       <%= button_tag(type: :submit, class: "btn btn-lg btn-success") do %>
         <i class="fa fa-search"></i> Search for a friend
@@ -30,9 +32,9 @@
           <tbody>
             <% @users.each do |user| %>
               <tr>
-                <td><strong>Name:</strong> <%= user.full_name %></td>
-                <td><strong>Email:</strong> <%= user.email %></td>
-                <td><strong>Profile:</strong>
+                <td><strong>Name:</strong> <%= user.full_name %> </td>
+                <td><strong> Email:</strong> <%= user.email %> </td>
+                <td><strong> Profile:</strong>
                   <%= link_to "View Profile", user_path(user), 
                              class: 'btn btn-xs btn-success' %> 
                   <% if current_user.not_friends_with?(user.id) %>
